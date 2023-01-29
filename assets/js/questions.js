@@ -11,7 +11,7 @@ let quizQuestions = [
     },
 
     {
-        question: 'how big is the window?',
+        question: 'how big is the fridge?',
         choices: [
             'big',
             'small',

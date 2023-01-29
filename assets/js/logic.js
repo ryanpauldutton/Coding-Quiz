@@ -18,53 +18,71 @@ let timer;
 let timerCount;
 
 function startGame() {
-    timerCount = 50;
-    // Prevents start button from being clicked when round is in progress
-    startScreenEl.classList.add('hide')
-    questionsScreenEl.classList.remove('hide')
-    startTimer();
+  timerCount = 50;
+  // Prevents start button from being clicked when round is in progress
+  startScreenEl.classList.add('hide')
+  questionsScreenEl.classList.remove('hide')
+  startTimer();
 
-    questionTitleEl.textContent = quizQuestions[0]['question'];
+  questionTitleEl.textContent = quizQuestions[0]['question'];
 
-    // var choiceOne = document.createElement("button");
-    // choicesEl.append(choiceOne);
-    // choiceOne.textContent = quizQuestions[0]['choices'][0];
+  let quizCorrect = quizQuestions[0]['correctAnswerIndex'];
+  console.log(quizCorrect)
 
-    // var choiceTwo = document.createElement("button");
+  for (var x = 0; x < 4; x++) {
+    var button = document.createElement('button');
+    button.textContent = quizQuestions[0]['choices'][x];
+    if (x === quizCorrect) {
+      choicesEl.appendChild(button).classList.add('correct');
+    }
+    choicesEl.appendChild(button);
 
-    // choicesEl.append(choiceTwo);
-    // choiceTwo.textContent = quizQuestions[0]['choices'][1];
+  };
+  console.log(choicesEl)
+  nextQuestion();
 
-    // var choiceThree = document.createElement("button");
+}
 
-    // choicesEl.append(choiceThree);
-    // choiceThree.textContent = quizQuestions[0]['choices'][2];
+// function nextQuestion(){
+//     console.log('Herro')
+// }
+// correctAnswer();
 
-    // var choiceFour = document.createElement("button");
+function nextQuestion() {
+  var correct = choicesEl.querySelector('.correct');
+  correct.addEventListener('click', questionGet());
+}
 
-    
-    //   choicesEl.append(choiceFour);
-    //   choiceFour.textContent = quizQuestions[0]['choices'][3];
+function questionGet() {
+  questionTitleEl.textContent = quizQuestions[1]['question'];
 
-      for(var x = 0; x < 4; x++){
-        var button = document.createElement('button');
-        button.textContent = quizQuestions[0]['choices'][x];
-        choicesEl.appendChild(button);
-      }
+  for (var x = 0; x < 4; x++) {
+    choicesEl.button[x].textContent = quizQuestions[1]['choices'][x];
+    if (x === quizCorrect) {
+      choicesEl.appendChild(button).classList.add('correct');
+    }
+    choicesEl.appendChild(button);
 
-    // var addButton1 = document.createElement("button");
-    // choicesEl.append(addButton1);
-    // addButton1.textContent = quizQuestions[0]['choices'][0];
+  };
+  nextQuestion();
+};
+// function correctAnswer(){
+//     // BUTTON CLICKED === CORRECT ANSWER INDEX
+//     if(document.querySelector('.correct').clicked == true)
+// {
+//    alert("correct")}};
+
+// }
+//     nextQuestion();
+//   }}
 
 
 
-  }
-
-  function startTimer() {
-    // Sets timer
-    timer = setInterval(function() {
-      timerCount--;
-      timerElement.textContent = timerCount;
+function startTimer() {
+  // Sets timer
+  timer = setInterval(function () {
+    timerCount--;
+    timerElement.textContent = timerCount;
     //   if (timerCount >= 0) {
     //     // Tests if win condition is met
     //     if (isWin && timerCount > 0) {
@@ -79,11 +97,11 @@ function startGame() {
     //     clearInterval(timer);
     //     loseGame();
     //   }
-    }, 1000);
-  }
-  
+  }, 1000);
+}
 
-  startButton.addEventListener("click", startGame);
+
+startButton.addEventListener("click", startGame);
 
 
 
