@@ -32,6 +32,9 @@ button:hover {
 
 .choices button {
   display: block;
+  height: 50px;
+  width: 400px;
+  color: #000000;
 }
 
 input[type="text"] {
