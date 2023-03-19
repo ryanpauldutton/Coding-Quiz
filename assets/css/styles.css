@@ -3,6 +3,10 @@ body {
   font-size: 120%;
 }
 
+.hide {
+  display: none;
+}
+
 a {
   color: #563d7c;
   text-decoration: none;
@@ -41,6 +45,10 @@ input[type="text"] {
   font-size: 100%;
 }
 
+.green{
+  background-color: green;
+}
+
 ol {
   padding-left: 0px;
   max-height: 400px;
@@ -61,9 +69,7 @@ li:nth-child(odd) {
   max-width: 600px;
 }
 
-.hide {
-  display: none;
-}
+
 
 .start {
   text-align: center;

@@ -2,46 +2,44 @@ let quizQuestions = [
     {
         question: 'how big is the window?',
         choices: [
-            'big',
-            'small',
-            'medium',
-            'large'
-        ],
-        correctAnswerIndex: 3
+            {text: 'big', correct: true},
+            {text: 'small', correct: false},
+            {text: 'medium', correct: false},
+            {text: 'XL', correct: false}
+        ]
     },
 
     {
-        question: 'how big is the fridge?',
+        question: 'how big is the sdasd?',
         choices: [
-            'big',
-            'small',
-            'medium',
-            'large'
-        ],
-        correctAnswerIndex: 2
+            {text: '1', correct: true},
+            {text: '2', correct: false},
+            {text: '3', correct: false},
+            {text: '4', correct: false}
+        ]
     },
 
     {
-        question: 'how big is the window?',
+        question: 'how big is the 3333?',
         choices: [
-            'big',
-            'small',
-            'medium',
-            'large'
-        ],
-        correctAnswerIndex: 1
+            {text: 'brown', correct: true},
+            {text: 'green', correct: false},
+            {text: 'blue', correct: false},
+            {text: 'XL', correct: false}
+        ]
     },
 
+
     {
-        question: 'how big is the window?',
+        question: 'how big is the 44444?',
         choices: [
-            'big',
-            'small',
-            'medium',
-            'large'
-        ],
-        correctAnswerIndex: 2
-    },
+            {text: 'tree', correct: true},
+            {text: 'cat', correct: false},
+            {text: 'squirrel', correct: false},
+            {text: 'XL', correct: false}
+        ]
+    }
+
 ]
 
 // let choicesEl = document.querySelector('#choices')
