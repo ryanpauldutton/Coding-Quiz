@@ -3,7 +3,7 @@
 <div align="center">
   
 
-<h3 align="center">Personal Portfolio</h3>
+<h3 align="center">JS Quiz</h3>
 
   <p align="center">
     using html and css
