@@ -3,7 +3,7 @@
 <div align="center">
   
 
-<h3 align="center">Personal Portfolio</h3>
+<h3 align="center">JS Quiz</h3>
 
   <p align="center">
     using html and css
@@ -11,7 +11,7 @@
     <a href="https://github.com/ryanpauldutton/Coding-Quiz"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ryanpauldutton.github.io/challenge3/">View GH Pages</a>
+    <a href="https://ryanpauldutton.github.io/Coding-Quiz/">View GH Pages</a>
     ·
 
   </p>
