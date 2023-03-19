@@ -1,42 +1,42 @@
 let quizQuestions = [
     {
-        question: 'how big is the window?',
+        question: 'Inside which HTML element do we put the JavaScript?',
         choices: [
-            {text: 'big', correct: true},
-            {text: 'small', correct: false},
-            {text: 'medium', correct: false},
-            {text: 'XL', correct: false}
+            {text: '<script>', correct: true},
+            {text: '<scripting>', correct: false},
+            {text: '<body>', correct: false},
+            {text: '<JS>', correct: false}
         ]
     },
 
     {
-        question: 'how big is the sdasd?',
+        question: 'Where is the correct place to insert a JavaScript?',
         choices: [
-            {text: '1', correct: true},
-            {text: '2', correct: false},
-            {text: '3', correct: false},
-            {text: '4', correct: false}
+            {text: 'the <body>', correct: false},
+            {text: 'the <head>', correct: false},
+            {text: 'Special Place', correct: false},
+            {text: 'both <head> and <body>', correct: true}
         ]
     },
 
     {
-        question: 'how big is the 3333?',
+        question: 'How do you write "Hello World" in an alert box?',
         choices: [
-            {text: 'brown', correct: true},
-            {text: 'green', correct: false},
-            {text: 'blue', correct: false},
-            {text: 'XL', correct: false}
+            {text: 'msg', correct: false},
+            {text: 'alert', correct: true},
+            {text: 'msgbox', correct: false},
+            {text: 'msgSocks', correct: false}
         ]
     },
 
 
     {
-        question: 'how big is the 44444?',
+        question: 'How do you call a function named "myFunction"?',
         choices: [
-            {text: 'tree', correct: true},
-            {text: 'cat', correct: false},
-            {text: 'squirrel', correct: false},
-            {text: 'XL', correct: false}
+            {text: 'myFunction()', correct: true},
+            {text: 'call function myFunction()', correct: false},
+            {text: 'call myFunction!', correct: false},
+            {text: 'FUNCTION NOW!', correct: false}
         ]
     }
 
