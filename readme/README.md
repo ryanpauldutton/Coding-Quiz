@@ -1,88 +1,75 @@
-# Module 6 Challenge Web APIs: Code Quiz
-
-## Your Task
-
-As you proceed in your journey to becoming a front-end web developer, it’s likely that you’ll be asked to complete a coding assessment, perhaps as part of an interview process. A typical coding assessment is a combination of multiple-choice questions and interactive coding challenges. 
-
-To help you become familiar with these tests and give you a chance to apply the skills from this module, this week’s challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. This week’s coursework has taught you all the skills you need to succeed in this challenge.
- 
-
-## User Story
-
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
-
-## Acceptance Criteria
-
-Create a code quiz that contains the following requirements:
-
-* A start button that when clicked a timer starts and the first question appears.
- 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
-
-* The quiz should end when all questions are answered or the timer reaches 0.
-
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
+<!-- PROJECT -->
+<br />
+<div align="center">
   
-## Mock-Up
 
-The following animation demonstrates the application functionality:
+<h3 align="center">Personal Portfolio</h3>
 
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their intials, then clears their intials and starts over.](./assets/08-web-apis-challenge-demo.gif)
+  <p align="center">
+    using html and css
+    <br />
+    <a href="https://github.com/ryanpauldutton/Coding-Quiz"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://ryanpauldutton.github.io/challenge3/">View GH Pages</a>
+    ·
 
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
+  </p>
+</div>
 
 
-## Review
+<!-- ABOUT THE PROJECT -->
+## About The Project
+ <img src="../assets/screen.png" alt="Logo" width="900" height="570">
 
-You are required to submit BOTH of the following for review:
 
-* The URL of the functional, deployed application.
+### Tutorials
+https://www.youtube.com/watch?v=DFhmNLKwwGw
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+### Built With
+HTML
+CSS
+JS
+
+
+### Installation
+
+1. Clone the repo to your local system
+2. Access html and css files in VS Code
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Make A JS Quiz
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<!-- CONTACT -->
+## Contact
+
+GITHUB: [https://github.com/ryanpauldutton/](https://github.com/ryanpauldutton/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

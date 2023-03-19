@@ -3,13 +3,14 @@
 console.log(quizQuestions[0]['question']);
 
 let startButton = document.querySelector('#start');
+let submitButton = document.querySelector('#submit');
 let timerElement = document.querySelector('#time');
 let startScreenEl = document.querySelector('#start-screen');
 let questionsScreenEl = document.querySelector('#questions');
 let choicesEl = document.querySelector('#choices')
 let questionTitleEl = document.querySelector('#question-title')
 let endScreenEl = document.querySelector('#end-screen')
-
+let scoreName = document.querySelector('#initials')
 
 // let questions1 = [big, small, medium, large];
 // let questions2 = [big, small, medium, large];
@@ -20,8 +21,7 @@ let timer;
 let timerCount;
 let shuffledQuestions, currentQuestionIndex ;
 let answeredCorrect = 0
-const NO_OF_HIGH_SCORES = 10;
-const HIGH_SCORES = 'highScores';
+
 
 startButton.addEventListener("click", startGame);
 
@@ -117,11 +117,10 @@ function startTimer() {
 
 
 function winGame(){
-let score = `${timerCount}`
+ let score = `${timerCount}`
   clearInterval(timer);
   let scoreEl = document.getElementById("final-score")
   scoreEl.innerHTML= score;
-  localStorage.setItem('highscores', 'Tesla');
   var winnerText = document.createElement('h1')
   winnerText.textContent = 'YOU WIN!';
   endScreenEl.appendChild(winnerText)
@@ -138,21 +137,22 @@ function loseGame() {
 }
 
 //HIGHSCORES
-function checkHighScore(score) {
-  const highScores = JSON.parse(localStorage.getItem(HIGH_SCORES)) ?? [];
-  const lowestScore = highScores[NO_OF_HIGH_SCORES - 1]?.score ?? 0;
-  
-  if (score > lowestScore) {
-    saveHighScore(score, highScores); // TODO
-    showHighScores(); // TODO
-  }
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+localStorage.setItem('highScores', JSON.stringify([]));
+console.log(JSON.parse(localStorage.getItem('highScores')))
+
+submitButton.addEventListener("click", saveHighscore);
+
+function saveHighscore() {
+  console.log('saved');
+  e.preventDefault();
+
+  const newScore = {
+    score : score,
+    name : scoreName.value
+  };
+  highScores.push(newScore);
+  console.log(highScores);
 }
-// Button to CHANGE PAGE LOCATION
 
-// <button id="myButton" class="float-left submit-button" >Home</button>
-
-// <script type="text/javascript">
-//     document.getElementById("myButton").onclick = function () {
-//         location.href = "www.yoursite.com";
-//     };
-// </script>
+//https://www.youtube.com/watch?v=DFhmNLKwwGw HOW TO HIGHSCORES
