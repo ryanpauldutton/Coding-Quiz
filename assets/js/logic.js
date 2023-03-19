@@ -26,7 +26,7 @@ let answeredCorrect = 0
 startButton.addEventListener("click", startGame);
 
 function startGame() {
-  timerCount = 5;
+  timerCount = 15;
   // Prevents start button from being clicked when round is in progress
   startScreenEl.classList.add('hide')
   
